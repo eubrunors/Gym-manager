@@ -1,0 +1,21 @@
+# Arquivos de configuração do Eclipse
+.classpath
+.project
+.settings/
+
+# Diretório de saída de compilação
+bin/
+
+# Dependências e bibliotecas locais
+libs/
+
+# Arquivos gerados temporários ou backups
+*.log
+*.tmp
+*.bak
+*.swp
+.DS_Store
+
+# Arquivos SQL e anotações (caso não queira versionar)
+sql-script
+notas
