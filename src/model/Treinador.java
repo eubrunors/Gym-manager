@@ -1,5 +1,6 @@
 package model;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class Treinador extends Pessoa {
@@ -7,6 +8,16 @@ public class Treinador extends Pessoa {
 	private int idTreinador;
 	private double salario; 
     private List<Aluno> alunos; // Agregação (1 Treinador -> vários Alunos)
+    
+    public Treinador() {
+    	this.alunos = new ArrayList<Aluno>();
+    }
+    
+    public Treinador(int idTreinador, double salario, List<Aluno> alunos) {
+    	this.idTreinador = idTreinador;
+    	this.salario = salario;
+    	this.alunos = alunos;
+    }
     
 	public int getIdTreinador() {
 		return idTreinador;
